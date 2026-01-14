@@ -8,12 +8,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1f2937;
   line-height: 1.8;
-  background-image: url("Fundo de Programação.png");
+
+  background-image: url("/imgprog.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: transparent;
+
   overflow-x: hidden;
 }
 
