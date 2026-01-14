@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larck Studio — Criação de Sites Profissionais</title>
+  <meta
+    name="description"
+    content="Sites profissionais para pequenas empresas que querem ser levadas a sério na internet. Design moderno, foco em conversão e desenvolvimento sob medida."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1 class="logo">Larck Studio</h1>
+    </div>
+
+    <div class="hero-center">
+      <h2>O site ideal para sua empresa</h2>
+      <p>
+        Presença digital forte, visual moderno e soluções pensadas para transformar visitantes em clientes reais.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="scroll-anim-container">
+        <div class="scroll-anim-box">
+          <h2>O site que a sua empresa precisa para ser levada a sério</h2>
+          <p>
+            Se você é dono de uma pequena empresa, sabe como é difícil cuidar de tudo ao mesmo tempo.
+            Um site profissional resolve uma parte importante disso: ele apresenta o seu negócio 24 horas por dia,
+            passa confiança para seus clientes e facilita o primeiro contato.
+          </p>
+          <p>
+            A ideia aqui é simples: eu cuido de toda a parte técnica e visual, e você foca no que sabe fazer melhor,
+            que é tocar o seu negócio. Juntos, podemos criar um site bonito, fácil de usar, rápido
+            e realmente pensado para trazer mais clientes para a sua empresa — não só “estar na internet”.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="projects-wrapper">
+        <h2>Projetos Realizados</h2>
+        <p>Confira alguns sites que já criei. Clique na imagem para visitar o projeto.</p>
+
+        <div class="projects-carousel">
+          <button class="projects-arrow prev" aria-label="Projeto anterior">‹</button>
+
+          <div class="projects-viewport">
+            <div class="projects-track">
+              <div class="project-slide">
+                <a
+                  href="https://seulink1.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-image"
+                >
+                  <img src="projeto1.png" alt="Preview do Projeto 1" />
+                </a>
+
+                <div class="project-info">
+                  <h3>Site Institucional - Empresa X</h3>
+                  <p>
+                    Site com apresentação da empresa, serviços oferecidos,
+                    formulário de contato e design moderno focado em conversão.
+                  </p>
+                  <a
+                    href="https://seulink1.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                  >
+                    Visitar Site →
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-slide">
+                <a
+                  href="https://seulink2.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-image"
+                >
+                  <img src="projeto2.png" alt="Preview do Projeto 2" />
+                </a>
+
+                <div class="project-info">
+                  <h3>Landing Page - Serviços Y</h3>
+                  <p>
+                    Página de captura para geração de leads, com visual atrativo,
+                    carregamento rápido e integração com formulário de e-mail.
+                  </p>
+                  <a
+                    href="https://seulink2.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                  >
+                    Visitar Site →
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-slide">
+                <a
+                  href="https://seulink3.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-image"
+                >
+                  <img src="projeto3.png" alt="Preview do Projeto 3" />
+                </a>
+
+                <div class="project-info">
+                  <h3>Portfólio Profissional</h3>
+                  <p>
+                    Portfólio para profissional autônomo, com galeria de trabalhos,
+                    apresentação pessoal e contato direto.
+                  </p>
+                  <a
+                    href="https://seulink3.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                  >
+                    Visitar Site →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="projects-arrow next" aria-label="Próximo projeto">›</button>
+        </div>
+
+        <div class="projects-dots"></div>
+      </div>
+    </section>
+
+    <section class="budget-section">
+      <div class="budget-box">
+        <h2>Solicitar Orçamento</h2>
+        <p>Se você tem uma ideia ou projeto em mente, vamos conversar. Me conte sobre sua visão.</p>
+
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/xojjvqpy"
+          method="POST"
+        >
+          <div class="row">
+            <input type="text" name="nome" placeholder="Seu Nome *" required />
+            <input type="email" name="email" placeholder="Seu E-mail *" required />
+          </div>
+
+          <textarea
+            name="mensagem"
+            placeholder="Descreva sua ideia ou necessidade *"
+            required
+          ></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 <strong>Larck Studio</strong>. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
