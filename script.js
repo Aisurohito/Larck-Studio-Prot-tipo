@@ -62,7 +62,7 @@ if (scrollSection && scrollBox) {
     scrollBox.style.transform = `translateX(${translateX}%)`;
   };
 
-  window.addEventListener("scroll", updateScrollAnimation);
+  window.addEventListener("scroll", updateScrollAnimation, { passive: true });
   window.addEventListener("resize", updateScrollAnimation);
   updateScrollAnimation();
 }
@@ -99,6 +99,7 @@ const dotsContainer = document.querySelector(".projects-dots");
 if (track && prevBtn && nextBtn && dotsContainer) {
   const slides = Array.from(track.children);
   let currentIndex = 0;
+  let autoSlideTimer;
 
   slides.forEach((_, index) => {
     const dot = document.createElement("button");
@@ -120,6 +121,15 @@ if (track && prevBtn && nextBtn && dotsContainer) {
     dots.forEach((dot, i) => {
       dot.classList.toggle("active", i === currentIndex);
     });
+
+    clearInterval(autoSlideTimer);
+    startAutoSlide();
+  }
+
+  function startAutoSlide() {
+    autoSlideTimer = setInterval(() => {
+      updateSlider(currentIndex + 1);
+    }, 5000);
   }
 
   prevBtn.addEventListener("click", () => updateSlider(currentIndex - 1));
@@ -129,7 +139,5 @@ if (track && prevBtn && nextBtn && dotsContainer) {
     dot.addEventListener("click", () => updateSlider(index));
   });
 
-  setInterval(() => {
-    updateSlider(currentIndex + 1);
-  }, 5000);
+  startAutoSlide();
 }
